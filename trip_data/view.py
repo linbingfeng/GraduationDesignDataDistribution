@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-#from django.http import HttpResponse
+from django.http import HttpResponse
 from django.shortcuts import render
 from trip_data.utils.MongoDBUtil import MongodbUtil
 
-def index(request):
+def zonghesheji(request):
     mongo = MongodbUtil()
     context = {}
     context['hello'] = 'Hello World!'
@@ -23,4 +23,8 @@ def index(request):
     context["all_low_hotel"] = price_d[0]["low_num"]+price_d[1]["low_num"]+price_d[2]["low_num"]
     context["all_middle_hotel"] = price_d[0]["middle_num"] + price_d[1]["middle_num"] + price_d[2]["middle_num"]
     context["all_height_hotel"] = price_d[0]["height_num"] + price_d[1]["height_num"] + price_d[2]["height_num"]
+    return render(request, 'zonghesheji.html', context)
+
+def index(request):
+    context = {}
     return render(request, 'index.html', context)
