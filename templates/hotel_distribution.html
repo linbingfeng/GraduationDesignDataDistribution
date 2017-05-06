@@ -1,0 +1,50 @@
+{% extends "index.html" %}
+{% load add_value %}
+{% load staticfiles %}
+{% block title %}
+    <title>酒店分布</title>
+    <link href="{% static "css/hotel_distribution.css" %}" rel="stylesheet">
+{% endblock %}
+{% block mainbody %}
+    <div id="content_hotel_dist">
+        <div style="height: 75px;padding-top: 20px">
+            {% include "base.html" %}
+            <div class="select_btn" onclick="select_btn()">查询</div>
+        </div>
+        {% if not city_data %}
+            <div style="text-align: center;width: 20%;height: 300px">
+                <div>
+                    <img id="no_data" src="{% static "pic/no_data.jpg" %}" style="position:relative;left: 140px"/>
+                </div>
+            </div>
+        {% endif %}
+        {% if city_data %}
+        <div>
+            <h4>国内酒店-城市分布</h4>
+            <table>
+                <tr><td>城市类别</td><td>酒店数量</td><td>占比</td></tr>
+                 <tr><td>全部城市</td><td>{{ city_data_count }}</td><td>100.0%</td></tr>
+                 <tr><td>一线城市</td><td>{{city_data.hotel_count_one}}</td><td>{{ city_data.reserve_col_1 }}%</td></tr>
+                 <tr><td>二线城市</td><td>{{city_data.hotel_count_two}}</td><td>{{ city_data.reserve_col_2  }}%</td></tr>
+                 <tr><td>其他</td><td>{{city_data.hotel_count_other}}</td><td>{{ city_data.reserve_col_3 }}%</td></tr>
+            </table>
+        </div>
+        <div>
+            <h4>国内酒店-价格分布</h4>
+            <table style="width: 100%">
+                <tr><td>城市类别</td><td>有价酒店数量</td><td>总酒店数量</td><td>普通酒店数量</td><td>轻奢酒店数量</td><td>奢华酒店数量</td></tr>
+                 <tr><td>全部城市</td><td>{{ has_price_hotel.0 }}</td><td>{{city_data_count}}</td><td>{{ has_price_hotel.1 }}</td><td>{{ has_price_hotel.2 }}</td><td>{{ has_price_hotel.3 }}</td></tr>
+                 <tr><td>一线城市</td><td>{{price_data.0.reserve_col_1}}</td><td>{{city_data.hotel_count_one}}</td><td>{{price_data.0.low_hotel_count}}</td><td>{{price_data.0.middle_hotel_count}}</td><td>{{price_data.0.height_hotel_count}}</td></tr>
+                 <tr><td>二线城市</td><td>{{price_data.1.reserve_col_1}}</td><td>{{city_data.hotel_count_two}}</td><td>{{price_data.1.low_hotel_count}}</td><td>{{price_data.1.middle_hotel_count}}</td><td>{{price_data.1.height_hotel_count}}</td></tr>
+                 <tr><td>其他</td><td>{{price_data.2.reserve_col_1}}</td><td>{{city_data.hotel_count_other}}</td><td>{{price_data.2.low_hotel_count}}</td><td>{{price_data.2.middle_hotel_count}}</td><td>{{price_data.2.height_hotel_count}}</td></tr>
+            </table>
+        </div>
+        {% endif %}
+        </div>
+    <script>
+        function select_btn() {
+            var url = "/hotel_distribution/?date="+$('#dtp_input2').val();
+            location.href = url;
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,46 @@
+body,div,span{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+a{
+    text-decoration:none;
+    color:#428BCA;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+}
+a:hover {
+    color:#cccccc;
+    text-decoration:none;
+}
+a:link{
+text-decoration:none;
+}
+a:visited{
+text-decoration:none;
+}
+a:active{
+text-decoration:none;
+}
+.nav{
+    text-align:center;
+    margin:0 auto;
+    text-decoration:none;
+    background:#eeeeee;
+    font-size:20px;
+    font-family: 微软雅黑,宋体,Arial,Helvetica,Verdana,sans-serif;
+    font-weight:normal;
+    height: 80px;
+    color: #595559;
+}
+.nav_item{
+    /*float: left;*/
+    display:inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    top:30px;
+}
+#nav_item_p{
+    text-align:center;
+    margin: 0px auto;
+}

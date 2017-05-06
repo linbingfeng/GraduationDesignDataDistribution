@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block title %}
+    {% load staticfiles %}
+    <title>关于</title>
+{% endblock %}
+{% block mainbody %}
+    <div id="about_me_content">
+        <div>
+            <p> #^_^#  有时候我们就像关在笼子里面的小鸟，憧憬着外面的花花草草。</p>
+            <img src="{% static 'pic/about_me_1.jpg' %}">
+            <p> ╮(￣▽￣)╭ 梦想着可以成为一直会飞的天鹅，飞向南方。</p>
+            <img src="{% static 'pic/about_me_2.jpg' %}">
+            <p>很高兴在毕业设计上可以跟着冯sir，很感谢冯sir的指导，给我们毕设指明方向，让我们在成为天鹅的路上少走许多弯路。</p>
+            <p>---------13级网络工程（4）班 林冰峰 2017.05.04</p>
+        </div>
+    </div>
+    <style>
+        #about_me_content{
+               width: 30%;
+{#             text-align:center;#}
+             margin: 0px auto;
+        }
+    </style>
+{% endblock %}

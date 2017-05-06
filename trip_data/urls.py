@@ -15,12 +15,24 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from trip_data.view import zonghesheji
+from app.views import hotel_distribution
 from trip_data.view import index
+from trip_data.view import about_me
+from trip_data.view import more_function
+from trip_data.view import spider
+from app.views import hot_city
+from app.views import city_economic
+from trip_data.view import page_not_found
+from django.conf.urls import handler404
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^zonghesheji/', zonghesheji),
+    url(r'^hotel_distribution/', hotel_distribution),
     url(r'^index/|^$',index),
-
+    url(r'^hot_city/',hot_city),
+    url(r'^about_me/',about_me),
+    url(r'^more_function/', more_function),
+    url(r'^city_economic/', city_economic),
+    url(r'^spider/', spider),
 ]
+handler404 = page_not_found

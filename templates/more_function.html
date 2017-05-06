@@ -1,0 +1,27 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block title %}
+    <title>更多功能</title>
+{% endblock %}
+{% block mainbody %}
+<div id="img_div">
+    <p>  o(╥﹏╥)o 工程师正在加班加点赶工中...</p>
+    <img id='jingqingqidai' src="{% static 'pic/jingqingqidai.jpg' %}">
+</div>
+    <style>
+    #img_div p{
+            position: relative;
+        left: 220px;
+            margin-top: 30px;
+            text-align:left;
+        }
+        #jingqingqidai{
+            margin:0 30px;
+        }
+        #img_div{
+                width: 60%;
+             text-align:center;
+             margin: 0px auto;
+        }
+    </style>
+{% endblock %}

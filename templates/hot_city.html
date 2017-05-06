@@ -1,0 +1,103 @@
+{% extends "index.html" %}
+{% load staticfiles %}
+{% block title %}
+    <title>城市热度</title>
+    <link href="{% static "css/hot_city.css" %}" rel="stylesheet">
+{% endblock %}
+{% block mainbody %}
+    <div id="content_hot_city">
+        <div style="height:80px">
+            {% include "base.html" %}
+            <div class="btn_div" style="margin-top: 20px">
+                <label style="float: left;margin-top: 10px;font-weight: lighter ;">页数:</label>
+                <input id="index" type="text" value="" style="float: left;width: 50px;margin-top: 5px;margin-right: 10px"/>
+                <div onclick="sel()">查找</div>
+                <div onclick="first()">首页</div>
+                {% ifnotequal pindex 1 %}
+                <div onclick="last()">上一页</div>
+                {% endifnotequal %}
+                {% ifnotequal pindex pcount %}
+                <div onclick="next()">下一页</div>
+                {% endifnotequal %}
+                <div onclick="end()">尾页</div>
+            </div>
+        </div>
+        <div id="content_div_r">
+
+            {% if not data %}
+                <div style="text-align: center;width: 20%;height: 50px">
+{#                    <div>{{ date }}没有数据，请启动爬虫抓取数据。</div>#}
+                    <div>
+                        <img id="no_data" src="{% static "pic/no_data.jpg" %}"/>
+                    </div>
+                </div>
+            {% endif %}
+            {% for item  in  data %}
+            <div class="item">
+                <div class="item_child">
+                    <a href="{{ item.reserve_col1 }}">{{ item.city_name  }}</a>
+                </div>
+                <div class="item_child">
+                    城市热度值：{{ item.youji_count }}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        {% if  data %}
+            <div style="font-weight: normal"> - {{ pindex }} - </div>
+        {% endif %}
+{#        <div >#}
+{#            {% include "base.html" %}#}
+{#            <div class="btn_div">#}
+{#                <div onclick="first()">首页</div>#}
+{#                {% ifnotequal pindex 1 %}#}
+{#                <div onclick="last()">上一页</div>#}
+{#                {% endifnotequal %}#}
+{#                {% ifnotequal pindex pcount %}#}
+{#                <div onclick="next()">下一页</div>#}
+{#                {% endifnotequal %}#}
+{#                <div onclick="end()">尾页</div>#}
+{#            </div>#}
+{#        </div>#}
+    </div>
+    <script type="text/javascript">
+        {%  if not data %}
+            var w = 300;
+        {% else %}
+        var w = {{ psize }}/3+1
+        w = w*50;
+        {% endif %}
+        $('#content_div_r').css("height",w+'px')
+        function first() {
+            var first_url = "/hot_city/?pindex=1&psize={{ psize }}&date={{ date }}";
+            location.href = first_url;
+        }
+        function last() {
+            var last_url = "/hot_city/?pindex={{ pindex|add:-1 }}&psize={{ psize }}&date={{ date }}";
+            location.href = last_url;
+        }
+        function next() {
+            var next_url = "/hot_city/?pindex={{ pindex|add:1 }}&psize={{ psize }}&date={{ date }}";
+            location.href = next_url;
+        }
+        function end() {
+            var end_url = "/hot_city/?pindex={{ pcount }}&psize={{ psize }}&date={{ date }}";
+            location.href = end_url;
+        }
+        function sel() {
+             var index = $('#index').val();
+             if(index==''||index==null){
+                 index = '1';
+             }
+             var sel_url = "/hot_city/?pindex="+index+"&psize={{ psize }}&date="+$('#dtp_input2').val();
+            location.href = sel_url;
+        }
+    </script>
+    <style>
+        #no_data{
+            position: relative;
+            left: 170px;
+            top:30px
+        }
+    </style>
+{% endblock %}

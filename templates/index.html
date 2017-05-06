@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>carp数据分析系统</title>
+    {% load staticfiles %}
+    {% block title %}
+    <title>首页</title>
+    {% endblock %}
+    <link href="{% static "css/pic.css" %}" rel="stylesheet">
+    <link href="{% static "css/index.css" %}" rel="stylesheet">
 </head>
 <body>
+    {% block date %}
+    {% endblock %}
     <div>
-        <span>
-            <span>你好,linbingfeng</span>
-            <ul>
-                <li>
-                    <a>退出</a>
-                </li>
-            </ul>
-        </span>
+        <div class="nav">
+            <div><img src="{% static 'pic/sign.JPG' %}" style="float:left;width: 90px;position:relative;left: 350px;"></div>
+            <div id="nav_item_p">
+                <div class="nav_item"><a href="/index/">首页</a></div>
+                <div class="nav_item"><a href="/hot_city/">城市热度</a></div>
+                <div class="nav_item"><a href="/hotel_distribution/">酒店分布</a></div>
+                <div class="nav_item"><a href="/city_economic/">城市排行</a></div>
+                <div class="nav_item"><a href="/more_function/">更多功能</a></div>
+                <div class="nav_item"><a href="/about_me/">关于我们</a></div>
+            </div>
+        </div>
+        <div class="comtent">
+            {% block mainbody %}
+                <div id="comtent" style="width: 50%;margin: 60px auto;font-weight: lighter;font-size:larger">
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspHello,welcom to <strong>Carp</strong>.</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp这是一个基于爬虫的数据分析系统的可视化界面，通过爬虫抓取数据，然后通过一定的算法去分析数据，将得到的结果存入mysql，然后通过在这里可以查看结果。</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp本系统分为西安开发三个数据分析：</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/hot_city/">这里</a>可以访问<strong>城市热度</strong>页面，城市热度通过对网上(同程网)各个城市的游记数量等进行统计，以反馈该城市旅游的热度。</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/hotel_distribution/">这里</a>可以访问<strong>酒店分布</strong>页面，城市热度通过对的酒店进行统计，然后分析出对一线城市，二线城市所对应的酒店数量，反应一线城市与二线城市的差异。</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="/city_economic/">这里</a>可以访问<strong>城市排行</strong>页面，城市热度通过对网上各个城市的酒店数量等进行统计，以一定的算法分析各个城市的经济排行。</p>
+                <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp本系统所有数据通过网络爬虫抓取，分析算法出来的结果可能不够准确，所有结果仅供参考。</p>
+
+                </div>
+            {% endblock %}
+        </div>
     </div>
-    <div>
-        <span><a href="/index/">首页</a></span>
-    </div>
+{% block end %}
+    <div style="text-align: center;margin-top: 30px;font-weight: normal">&copy;carp数据分析系统 2017 GDUT毕业设计</div>
+{% endblock %}
 </body>
 </html>

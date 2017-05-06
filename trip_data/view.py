@@ -1,30 +1,59 @@
 # -*- coding: utf-8 -*-
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
+import threading
+import os
+import subprocess
+import time
 
-from django.http import HttpResponse
 from django.shortcuts import render
-from trip_data.utils.MongoDBUtil import MongodbUtil
 
-def zonghesheji(request):
-    mongo = MongodbUtil()
-    context = {}
-    context['hello'] = 'Hello World!'
-    city_d = []
-    price_d = []
-    for city in mongo.query('ly_hotel_city_distribution'):
-        city_d.append(city)
-    for p in mongo.query('ly_hotel_price_distribution'):
-        price_d.append(p)
-    context["city_data"] = city_d
-    context["price_data"] = price_d
-    context["one"] = round(float(city_d[0]["one_city_num"]) / float(city_d[0]["hotel_num"])*100,2)
-    context["two"] = round(float(city_d[0]["two_city_num"]) / float(city_d[0]["hotel_num"])*100,2)
-    context["other"] = round(float(city_d[0]["other_city_num"]) / float(city_d[0]["hotel_num"])*100,2)
-    context["has_price_hotel"] = price_d[0]["hotel_num"]+price_d[1]["hotel_num"]+price_d[2]["hotel_num"]
-    context["all_low_hotel"] = price_d[0]["low_num"]+price_d[1]["low_num"]+price_d[2]["low_num"]
-    context["all_middle_hotel"] = price_d[0]["middle_num"] + price_d[1]["middle_num"] + price_d[2]["middle_num"]
-    context["all_height_hotel"] = price_d[0]["height_num"] + price_d[1]["height_num"] + price_d[2]["height_num"]
-    return render(request, 'zonghesheji.html', context)
+from app.models import Spider
+
 
 def index(request):
     context = {}
     return render(request, 'index.html', context)
+
+def about_me(request):
+    context = {}
+    return render(request, 'about_me.html', context)
+
+def more_function(request):
+    context = {}
+    return render(request, 'more_function.html', context)
+
+def page_not_found(request):
+    context = {}
+    return render(request, '404.html', context)
+
+def spider(request):
+    context = {
+        'spider':[],
+        'date':time.strftime("%Y-%m-%d",time.localtime()),
+        'job_name':'',
+        'type':1, #1为爬虫 2为数据分析写入mysql
+        'action':1,
+        'desc':''
+    }
+    if 'date' in request.GET:
+        context['date'] =  request.GET['date']
+    if 'job_name' in  request.GET:
+        context['job_name'] = request.GET['job_name']
+    if 'action' in  request.GET:
+        context['action'] = int(request.GET['action']) #1运行 2停止 3设定运行规则（待定）
+    if 'type' in request.GET:
+        context['type'] = int(request.GET['type'])
+    if not context['job_name']:
+        pass
+    elif context['action'] == 1:
+        if context['type'] ==1:
+            Spider.objects.filter(reserve_col_1=context['job_name']).update(reserve_col_3=2)
+        else:
+            Spider.objects.filter(reserve_col_2=context['job_name']).update(reserve_col_3=2)
+    else:
+        context['desc'] = '暂未开发'
+    for item in Spider.objects.all():
+        context['spider'].append(item)
+    return render(request, 'spider.html', context)

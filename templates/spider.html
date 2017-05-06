@@ -1,0 +1,19 @@
+{% extends "index.html" %}
+{% block title %}
+    <title>爬虫面板</title>
+{% endblock %}
+{% block mainbody %}
+<div>
+    {% for item in spider %}
+        <div>
+            <span>{{ item.spider_name }}</span>
+            <span><a href="/spider/?job_name={{ item.reserve_col_1 }}&type=1&action=1">启动</a></span>
+            {%  ifequal  item.reserve_col_3 1 %}
+            <span>状态：静止</span>
+            {% else %}
+            <span>状态：正在运行中</span>
+            {%  endifequal %}
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

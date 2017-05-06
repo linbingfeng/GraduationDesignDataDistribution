@@ -1,0 +1,94 @@
+{% extends "index.html" %}
+{% load add_value %}
+{% load staticfiles %}
+{% block title %}
+    <title>城市经济排行榜</title>
+    <link href="{% static "css/city_economic.css" %}" rel="stylesheet">
+{% endblock %}
+{% block mainbody %}
+    <div>
+         <div style="height:40px;width: 60%;margin: 0 auto">
+            {% include "base.html" %}
+            <div class="btn_div" style="margin-top: 20px">
+                <label style="float: left;margin-top: 10px;font-weight: lighter ;">页数:</label>
+                <input id="index" type="text" value="" style="float: left;width: 50px;margin-top: 5px;margin-right: 10px"/>
+                <div onclick="sel()">查找</div>
+                <div onclick="first()">首页</div>
+                {% ifnotequal pindex 1 %}
+                <div onclick="last()">上一页</div>
+                {% endifnotequal %}
+                {% ifnotequal pindex pcount %}
+                <div onclick="next()">下一页</div>
+                {% endifnotequal %}
+                <div onclick="end()">尾页</div>
+            </div>
+        </div>
+        <div style="height: 45px">
+            {% if  data %}
+            <div id = 'nav_item_r'>
+                <div class="nav_item_r">城市排名</div>
+                <div class="nav_item_r">城市名称</div>
+                <div class="nav_item_r">城市积分</div>
+                <div class="nav_item_r">数据抓取时间</div>
+            </div>
+            {% endif %}
+        </div>
+        <div>
+            <div id="item_content" >
+                {% if not data %}
+                    <div style="text-align: center;width: 20%;height: 50px">
+            {#                    <div>{{ date }}没有数据，请启动爬虫抓取数据。</div>#}
+                        <div>
+                            <img id="no_data" src="{% static "pic/no_data.jpg" %}"/>
+                        </div>
+                    </div>
+                {% endif %}
+               {% for item  in  data %}
+                   <div>
+                       <div class="item_r">{{ item.reserve_col_1 }}</div>
+                       <div class="item_r">{{ item.city_name }}</div>
+                       <div class="item_r">{{ item.integral }}</div>
+                       <div class="item_r">{{ item.crawl_date }}</div>
+                   </div>
+               {% endfor %}
+            </div>
+        {% if  data %}
+            <div style="font-weight: normal;text-align: center;margin-top: 10px"> - {{ pindex }} - </div>
+        {% endif %}
+        </div>
+    </div>
+    <script type="text/javascript">
+        var w = {{ psize }} * 40;
+        $('#item_content').css("height",w+'px')
+        function first() {
+            var first_url = "/city_economic/?pindex=1&psize={{ psize }}&date={{ date }}";
+            location.href = first_url;
+        }
+        function last() {
+            var last_url = "/city_economic/?pindex={{ pindex|add:-1 }}&psize={{ psize }}&date={{ date }}";
+            location.href = last_url;
+        }
+        function next() {
+            var next_url = "/city_economic/?pindex={{ pindex|add:1 }}&psize={{ psize }}&date={{ date }}";
+            location.href = next_url;
+        }
+        function end() {
+            var end_url = "/city_economic/?pindex={{ pcount }}&psize={{ psize }}&date={{ date }}";
+            location.href = end_url;
+        }
+        function sel() {
+             var index = $('#index').val();
+             if(index==''||index==null){
+                 index = '1';
+             }
+             var sel_url = "/city_economic/?pindex="+index+"&psize={{ psize }}&date="+$('#dtp_input2').val();
+            location.href = sel_url;
+        }
+    </script>
+    <style>
+    #no_data{
+        position: relative;
+        left: 20px;
+    }
+    </style>
+{% endblock %}

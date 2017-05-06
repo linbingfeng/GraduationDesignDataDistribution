@@ -1,0 +1,9 @@
+{% load staticfiles %}
+{% if not data %}
+        <div style="text-align: center;width: 20%;height: 50px">
+{#                    <div>{{ date }}没有数据，请启动爬虫抓取数据。</div>#}
+            <div>
+                <img id="no_data" src="{% static "pic/no_data.jpg" %}"/>
+            </div>
+        </div>
+{% endif %}
