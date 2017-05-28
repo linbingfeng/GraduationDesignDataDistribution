@@ -1,0 +1,1157 @@
+2017-05-03 05:09:17 [scrapy.utils.log] INFO: Scrapy 1.3.0 started (bot: trip_data_spider)
+2017-05-03 05:09:17 [scrapy.utils.log] INFO: Overridden settings: {'NEWSPIDER_MODULE': 'trip_data_spider.spiders', 'ROBOTSTXT_OBEY': True, 'SPIDER_MODULES': ['trip_data_spider.spiders'], 'LOG_FILE': './log_data/LyPcCityYoujiCountSpider/spider_log_1493759354', 'BOT_NAME': 'trip_data_spider'}
+2017-05-03 05:09:17 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.logstats.LogStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.corestats.CoreStats']
+2017-05-03 05:09:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2017-05-03 05:09:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2017-05-03 05:09:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['trip_data_spider.pipelines.mongo_pipeline.MongoPipeline']
+2017-05-03 05:09:18 [scrapy.core.engine] INFO: Spider opened
+2017-05-03 05:09:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2017-05-03 05:09:19 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6023
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/robots.txt> (referer: None)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=安庆&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=淮北&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%9C%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阜阳&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%9A%8C%E5%9F%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=蚌埠&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=淮南&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%A0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=池州&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%88%E8%82%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=合肥&rt=2)
+2017-05-03 05:09:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BB%81%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=滁州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%A3%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宣城&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A9%AC%E9%9E%8D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=马鞍山&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黄山&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=亳州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8A%9C%E6%B9%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=芜湖&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%BF%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宿州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E9%99%B5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=铜陵&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%AD%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=六安&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%9C%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%9A%8C%E5%9F%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%A0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%88%E8%82%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BB%81%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%A3%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A9%AC%E9%9E%8D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8A%9C%E6%B9%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%BF%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%97%E4%BA%AC&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=北京&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E9%99%B5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%AD%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A6%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=福州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BE%99%E5%B2%A9&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=龙岩&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%B9%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南平&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%81%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宁德&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8E%86%E7%94%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=莆田&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%89%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=泉州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E6%98%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=三明&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%97%E4%BA%AC&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A6%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%94%98%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=甘南&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%91%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=金昌&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BE%99%E5%B2%A9&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%B9%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%81%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8E%A6%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=厦门&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E5%B3%AA%E5%85%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=嘉峪关&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8E%86%E7%94%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%89%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E6%98%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BC%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=漳州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E9%93%B6&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=白银&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=兰州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E5%A4%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=临夏&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%85%92%E6%B3%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=酒泉&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%94%98%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%91%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8E%A6%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E5%B3%AA%E5%85%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BA%86%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=庆阳&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%99%87%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=陇南&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BC%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%B3%E5%87%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=平凉&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E9%93%B6&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E5%A4%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%85%92%E6%B3%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A9%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=天水&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E6%8E%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=张掖&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BA%86%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AD%A6%E5%A8%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=武威&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%99%87%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%B3%E5%87%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E8%8E%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=东莞&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BD%9B%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=佛山&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A9%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E6%8E%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%B3%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=河源&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AD%A6%E5%A8%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E8%8E%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%9F%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=江门&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BD%9B%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=广州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%B3%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%83%A0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=惠州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8F%AD%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=揭阳&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8C%82%E5%90%8D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=茂名&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%9F%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A2%85%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=梅州&rt=2)
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%85%E8%BF%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=清远&rt=2)
+2017-05-03 05:09:20 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%AE%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=潮州&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%95%E5%B0%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=汕尾&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%95%E5%A4%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=汕头&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%83%A0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8F%AD%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8C%82%E5%90%8D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9F%B6%E5%85%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=韶关&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%B1%E5%9C%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=深圳&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A2%85%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%85%E8%BF%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%91%E6%B5%AE&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=云浮&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%AE%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B3%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阳江&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%95%E5%B0%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%95%E5%A4%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%9B%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=湛江&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%82%87%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=肇庆&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9F%B6%E5%85%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%B1%E5%9C%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%AD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=中山&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%91%E6%B5%AE&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8F%A0%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=珠海&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B3%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BE%E8%89%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=百色&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%9B%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%82%87%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%97%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=北海&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B4%87%E5%B7%A6&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=崇左&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B2%E5%9F%8E%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=防城港&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%AD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8F%A0%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A1%82%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=桂林&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BE%E8%89%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%B5%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=贵港&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%97%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%B3%E6%B1%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=河池&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B4%87%E5%B7%A6&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%A5%E5%AE%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=来宾&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%BA%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=贺州&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B2%E5%9F%8E%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A1%82%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%B5%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南宁&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%B3%E6%B1%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%92%A6%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=钦州&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%A5%E5%AE%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A2%A7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=梧州&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%BA%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=玉林&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%92%A6%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9F%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=柳州&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E9%A1%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=安顺&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A2%A7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=贵阳&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AF%95%E8%8A%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=毕节&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%AD%E7%9B%98%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=六盘水&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E4%B8%9C%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黔东南&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黔南&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E8%A5%BF%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黔西南&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9F%B3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E9%A1%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E4%BB%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=铜仁&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E4%BA%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=保亭&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B4%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%81%B5%E4%B9%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=遵义&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%8C%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=昌江&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AF%95%E8%8A%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%AD%E7%9B%98%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E6%96%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=东方&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%84%E8%BF%88%E5%8E%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=澄迈县&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9A%E5%AE%89%E5%8E%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=定安县&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E4%B8%9C%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%90%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=乐东&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%94%E8%A5%BF%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=海口&rt=2)
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%99%B5%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=陵水&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E4%BB%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E4%BA%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%81%B5%E4%B9%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%8C%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%90%BC%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=琼海&rt=2)
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E6%96%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%84%E8%BF%88%E5%8E%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:21 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9A%E5%AE%89%E5%8E%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%90%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E4%BA%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=三亚&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%94%E6%8C%87%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=五指山&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%99%B5%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%87%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=文昌&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%84%8B%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=儋州&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%90%BC%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%87%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=万宁&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%A7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=沧州&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E5%AE%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=保定&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E4%BA%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%94%E6%8C%87%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%87%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%AF%E9%83%B8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=邯郸&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%89%BF%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=承德&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A1%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=衡水&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%84%8B%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%87%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%A7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E5%AE%B6%E5%BA%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=石家庄&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E5%AE%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A7%A6%E7%9A%87%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=秦皇岛&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%8A%E5%9D%8A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=廊坊&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%AF%E9%83%B8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%A2%E5%8F%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=邢台&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%89%BF%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%A4%E5%A3%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鹤壁&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%94%90%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=唐山&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A1%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E5%AE%B6%E5%BA%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=济源&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E5%AE%B6%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=张家口&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=安阳&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A7%A6%E7%9A%87%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%8A%E5%9D%8A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%84%A6%E4%BD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=焦作&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%A2%E5%8F%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%80%E5%B0%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=开封&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%A4%E5%A3%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B4%9B%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=洛阳&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%94%90%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南阳&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E5%AE%B6%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E9%97%A8%E5%B3%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=三门峡&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%84%A6%E4%BD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%95%86%E4%B8%98&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=商丘&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%80%E5%B0%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E4%B9%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=新乡&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B4%9B%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%AE%B8%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=许昌&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%A1%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=信阳&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%A8%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=周口&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%B3%E9%A1%B6%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=平顶山&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%89%E9%97%A8%E5%B3%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BC%AF%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=漯河&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%95%86%E4%B8%98&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A9%BB%E9%A9%AC%E5%BA%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=驻马店&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%83%91%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=郑州&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BF%AE%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=濮阳&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E4%B9%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%AE%B8%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=大庆&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%A1%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%85%B4%E5%AE%89%E5%B2%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=大兴安岭&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%A8%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%91%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黑河&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%93%88%E5%B0%94%E6%BB%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=哈尔滨&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%A4%E5%B2%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鹤岗&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%B3%E9%A1%B6%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B8%A1%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鸡西&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BD%B3%E6%9C%A8%E6%96%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=佳木斯&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%83%E5%8F%B0%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=七台河&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BC%AF%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A9%BB%E9%A9%AC%E5%BA%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%83%91%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BF%AE%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%89%A1%E4%B8%B9%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=牡丹江&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%85%B4%E5%AE%89%E5%B2%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%91%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%93%88%E5%B0%94%E6%BB%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%8C%E9%B8%AD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=双鸭山&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BD%90%E9%BD%90%E5%93%88%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=齐齐哈尔&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%A5%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=绥化&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%A4%E5%B2%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B8%A1%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BD%B3%E6%9C%A8%E6%96%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%83%E5%8F%B0%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%84%82%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鄂州&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BC%8A%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=伊春&rt=2)
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%81%A9%E6%96%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=恩施&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%89%A1%E4%B8%B9%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E7%9F%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黄石&rt=2)
+2017-05-03 05:09:22 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%8C%E9%B8%AD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E5%86%88&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=黄冈&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BD%90%E9%BD%90%E5%93%88%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%A5%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8D%86%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=荆门&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%9C%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=潜江&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%84%82%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BC%8A%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8D%86%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=荆州&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%81%A9%E6%96%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A5%9E%E5%86%9C%E6%9E%B6%E6%9E%97%E5%8C%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=神农架林区&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%81%E5%A0%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=十堰&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E7%9F%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9A%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=随州&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%BB%84%E5%86%88&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AD%A6%E6%B1%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=武汉&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BB%99%E6%A1%83&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=仙桃&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8D%86%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%9C%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8D%86%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%84%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=襄阳&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AD%9D%E6%84%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=孝感&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%A5%9E%E5%86%9C%E6%9E%B6%E6%9E%97%E5%8C%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%81%E5%A0%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%B8%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=咸宁&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9A%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%AD%A6%E6%B1%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B8%B8%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=常德&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宜昌&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BB%99%E6%A1%83&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%84%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AD%9D%E6%84%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%B8%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%B2%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=长沙&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B8%B8%E5%BE%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%83%B4%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=郴州&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A1%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=衡阳&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%80%80%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=怀化&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%B2%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%83%B4%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A1%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%80%80%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B2%B3%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=岳阳&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%98%E6%BD%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=湘潭&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%98%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=湘西&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=邵阳&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A8%84%E5%BA%95&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=娄底&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%8A%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=益阳&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B0%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=永州&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E5%AE%B6%E7%95%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=张家界&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=白城&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B2%B3%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%98%E6%BD%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%98%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=长春&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%BE%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=松原&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A8%84%E5%BA%95&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%8A%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B0%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%89%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=吉林&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BD%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=辽源&rt=2)
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9B%9B%E5%B9%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=四平&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BC%A0%E5%AE%B6%E7%95%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A0%AA%E6%B4%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=株洲&rt=2)
+2017-05-03 05:09:23 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%80%9A%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=通化&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%BE%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%89%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BD%E6%BA%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9B%9B%E5%B9%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A0%AA%E6%B4%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%B6%E8%BE%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=延边&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E7%99%BD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=长白山&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=白山&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%80%9A%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=淮安&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%9E%E4%BA%91%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=连云港&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B8%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=常州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%B6%E8%BE%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E4%BA%AC&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南京&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E7%99%BD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%99%BD%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E9%80%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南通&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%AE%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%9E%E4%BA%91%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8B%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=苏州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%BF%E8%BF%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宿迁&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B8%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=泰州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E4%BA%AC&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E9%80%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%90%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=徐州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8B%8F%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%90%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=盐城&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%BF%E8%BF%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%89%AC%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=扬州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%90%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%90%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%87%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=镇江&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A0%E9%94%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=无锡&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%89%AC%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8A%9A%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=抚州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%A3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=赣州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%89%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=吉安&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%AF%E5%BE%B7%E9%95%87&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=景德镇&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%87%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%9D%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=九江&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A0%E9%94%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%90%8D%E4%B9%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=萍乡&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南昌&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%8A%E9%A5%B6&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=上饶&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8A%9A%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%A3%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宜春&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%89%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%B0%E6%BD%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鹰潭&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E4%BD%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=新余&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%AF%E5%BE%B7%E9%95%87&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%9D%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%90%8D%E4%B9%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%AC%E6%BA%AA&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=本溪&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9E%8D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鞍山&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%9D%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=朝阳&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E6%98%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%8A%E9%A5%B6&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E6%98%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E8%BF%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=大连&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8A%9A%E9%A1%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=抚顺&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%B9%B0%E6%BD%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E4%BD%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%9C%E6%96%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阜新&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%91%AB%E8%8A%A6%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=葫芦岛&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BD%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=辽阳&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%AC%E6%BA%AA&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%94%A6%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=锦州&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9E%8D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B9%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=丹东&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%9D%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%98%E9%94%A6&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=盘锦&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E8%BF%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%88%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=沈阳&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%81%E5%B2%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=铁岭&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8A%9A%E9%A1%BA&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B4%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=兴城&rt=2)
+2017-05-03 05:09:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%90%A5%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=营口&rt=2)
+2017-05-03 05:09:24 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%9C%E6%96%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%91%AB%E8%8A%A6%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BD%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E5%BD%A6%E6%B7%96%E5%B0%94%E5%B8%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=巴彦淖尔市&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%94%A6%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E6%8B%89%E5%96%84%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿拉善盟&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B9%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%85%E5%A4%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=包头&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9B%98%E9%94%A6&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%A4%E5%B3%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=赤峰&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B2%88%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=呼和浩特&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%81%E5%B2%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B4%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%80%9A%E8%BE%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=通辽&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=呼伦贝尔&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=乌海&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=鄂尔多斯&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%90%A5%E5%8F%A3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E5%BD%A6%E6%B7%96%E5%B0%94%E5%B8%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E5%85%B0%E5%AF%9F%E5%B8%83%E5%B8%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=乌兰察布市&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E6%8B%89%E5%96%84%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8C%85%E5%A4%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%94%A1%E6%9E%97%E9%83%AD%E5%8B%92%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=锡林郭勒盟&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%A4%E5%B3%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%BC%E5%92%8C%E6%B5%A9%E7%89%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%80%9A%E8%BE%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%91%BC%E4%BC%A6%E8%B4%9D%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E5%98%B4%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=石嘴山&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9B%BA%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=固原&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B4%E5%AE%89%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=兴安盟&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%84%82%E5%B0%94%E5%A4%9A%E6%96%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%B4%E5%BF%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=吴忠&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E5%85%B0%E5%AF%9F%E5%B8%83%E5%B8%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%B6%E5%B7%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=银川&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E5%8D%97%E8%97%8F%E6%97%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=海南藏族&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%AD%E5%8D%AB&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=中卫&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%94%A1%E6%9E%97%E9%83%AD%E5%8B%92%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=海西&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E5%98%B4%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9B%BA%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%B4%E5%AE%89%E7%9B%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%A0%91&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=玉树&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%B4%E5%BF%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BB%A8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=滨州&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%B6%E5%B7%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=西宁&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=德州&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E5%8D%97%E8%97%8F%E6%97%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E8%90%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=东营&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%AD%E5%8D%AB&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%B7%E8%A5%BF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8F%8F%E6%B3%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=菏泽&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=济宁&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=济南&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%A0%91&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BB%A8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8E%B1%E8%8A%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=莱芜&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%81%8A%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=聊城&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B2%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=临沂&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%9C%E8%90%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9D%92%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=青岛&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8F%8F%E6%B3%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B5%8E%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A5%E7%85%A7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=日照&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B0%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=泰安&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8E%B1%E8%8A%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%81%8A%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A8%81%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=威海&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B2%82&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9D%92%E5%B2%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%8D%E5%9D%8A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=潍坊&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%83%9F%E5%8F%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=烟台&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A5%E7%85%A7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B0%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%B2%BB&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=长治&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A8%81%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9E%A3%E5%BA%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=枣庄&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%84%E5%8D%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=淄博&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BD%8D%E5%9D%8A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%83%9F%E5%8F%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%90%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=大同&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%8B%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=晋城&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%95%BF%E6%B2%BB&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%8B%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=晋中&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B1%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=临汾&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9E%A3%E5%BA%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B7%84%E5%8D%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%94%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=朔州&rt=2)
+2017-05-03 05:09:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%95%E6%A2%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=吕梁&rt=2)
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E5%90%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:25 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%8B%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%AA%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=太原&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%8B%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B1%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BF%BB%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=忻州&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B3%E6%B3%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阳泉&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9C%94%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%90%95%E6%A2%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%90%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=运城&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E5%BA%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=安康&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%AA%E5%8E%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9D%E9%B8%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宝鸡&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%95%86%E6%B4%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=商洛&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BF%BB%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E5%B7%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=铜川&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%B3%E6%B3%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%90%E5%9F%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%89%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=汉中&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%89%E5%BA%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%AD%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=渭南&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9D%E9%B8%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%95%86%E6%B4%9B&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=西安&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%93%9C%E5%B7%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%B8%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=咸阳&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B1%89%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%B6%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=延安&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%AD%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%8A%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=上海&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%9D%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿坝&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%B8%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=巴中&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A6%86%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=榆林&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BB%B6%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%88%90%E9%83%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=成都&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%8A%E6%B5%B7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BE%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=达州&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%94%98%E5%AD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=甘孜&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%9D%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%87%89%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=凉山&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=德阳&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=广安&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A6%86%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%88%90%E9%83%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%85%83&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=广元&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BE%BE%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9C%89%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=眉山&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%90%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=乐山&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%94%98%E5%AD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%85%85&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南充&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%87%89%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%86%85%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=内江&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%94%80%E6%9E%9D%E8%8A%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=攀枝花&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%81%82%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=遂宁&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%84%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=资阳&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B9%BF%E5%85%83&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E5%AE%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宜宾&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%87%AA%E8%B4%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=自贡&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9B%85%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=雅安&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9C%89%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%90%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=泸州&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E5%85%85&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%86%85%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A9%E6%B4%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=天津&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E9%87%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿里&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%94%80%E6%9E%9D%E8%8A%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%81%82%E5%AE%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%B5%84%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E5%AE%BE&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%87%AA%E8%B4%A1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%9B%85%E5%AE%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%8C%E9%83%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=昌都&rt=2)
+2017-05-03 05:09:26 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B3%B8%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8B%89%E8%90%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=拉萨&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=绵阳&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9E%97%E8%8A%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=林芝&rt=2)
+2017-05-03 05:09:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%A3%E6%9B%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=那曲&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B1%B1%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=山南&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%85%8B%E8%8B%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿克苏&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A9%E6%B4%A5&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E9%87%8C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E6%8B%89%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿拉尔&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A5%E5%96%80%E5%88%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=日喀则&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%8C%E9%83%BD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%8B%89%E8%90%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E9%9F%B3%E9%83%AD%E6%A5%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=巴音郭楞&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%9A%E5%B0%94%E5%A1%94%E6%8B%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=博尔塔拉&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%B5%E9%98%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9E%97%E8%8A%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%82%A3%E6%9B%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%93%88%E5%AF%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=哈密&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%8C%E7%94%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=和田&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B1%B1%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%85%8B%E8%8B%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E6%B2%B3%E5%AD%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=石河子&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%96%80%E4%BB%80&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=喀什&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%8B%E6%8B%89%E7%8E%9B%E4%BE%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=克拉玛依&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E6%8B%89%E5%B0%94&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%97%A5%E5%96%80%E5%88%99&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%8B%E5%AD%9C%E5%8B%92%E8%8B%8F%E6%9F%AF%E5%B0%94%E5%85%8B%E5%AD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=克孜勒苏柯尔克孜&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%94%E5%AE%B6%E6%B8%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=五家渠&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=乌鲁木齐&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B7%B4%E9%9F%B3%E9%83%AD%E6%A5%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%9A%E5%B0%94%E5%A1%94%E6%8B%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%93%88%E5%AF%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%92%8C%E7%94%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BC%8A%E7%8A%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=伊犁&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%9F%B3%E6%B2%B3%E5%AD%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%96%80%E4%BB%80&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%8B%E6%8B%89%E7%8E%9B%E4%BE%9D&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%8B%92%E6%B3%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=阿勒泰&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=保山&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%85%8B%E5%AD%9C%E5%8B%92%E8%8B%8F%E6%9F%AF%E5%B0%94%E5%85%8B%E5%AD%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%94%E5%AE%B6%E6%B8%A0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B9%8C%E9%B2%81%E6%9C%A8%E9%BD%90&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BA%A2%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=红河&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E5%AE%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=德宏&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%AA%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=迪庆&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A5%9A%E9%9B%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=楚雄&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E7%90%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=大理&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BC%8A%E7%8A%81&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%86%E6%98%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=昆明&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%98%BF%E5%8B%92%E6%B3%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BF%9D%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%BD%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=丽江&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BA%A2%E6%B2%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BE%B7%E5%AE%8F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9B%B2%E9%9D%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=曲靖&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%AE%E6%B4%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=普洱&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%BF%AA%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A5%9A%E9%9B%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%A4%A7%E7%90%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%80%92%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=怒江&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B2%A7&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=临沧&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%87%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=文山&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=西双版纳&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%86%E6%98%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%BA%AA&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=玉溪&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%BD%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%AD%E9%80%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=昭通&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9B%B2%E9%9D%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%99%AE%E6%B4%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%80%92%E6%B1%9F&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%B4%E6%B2%A7&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%87%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%AD%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=杭州&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%96%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=湖州&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%91%E5%8D%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=金华&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%BD%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=丽水&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%81%E6%B3%A2&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宁波&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A5%BF%E5%8F%8C%E7%89%88%E7%BA%B3&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=台州&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%8E%89%E6%BA%AA&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%98%AD%E9%80%9A&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E5%85%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=嘉兴&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%8D%E5%85%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=绍兴&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%9D%AD%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B9%96%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%91%E5%8D%8E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%B8%BD%E6%B0%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%81%E6%B3%A2&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%8D%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=重庆&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%A9%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=温州&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E5%85%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%88%9F%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=舟山&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E7%BB%8D%E5%85%B4&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A2%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=衢州&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A6%99%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=香港&rt=2)
+2017-05-03 05:09:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%B3%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=澳门&rt=2)
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%87%8D%E5%BA%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:27 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%B8%A9%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%AB%98%E9%9B%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=高雄&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%88%9F%E5%B1%B1&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%A1%A2%E5%B7%9E&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8A%B1%E8%8E%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=花莲&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9F%BA%E9%9A%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=基隆&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%A6%99%E6%B8%AF&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%B3%E9%97%A8&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=台北&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E4%B9%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=嘉义&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E9%AB%98%E9%9B%84&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=台东&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=台南&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8A%B1%E8%8E%B2&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%9F%BA%E9%9A%86&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E7%AB%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=新竹&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=台中&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E5%85%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=宜兰&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A1%83%E5%9B%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=桃园&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%98%89%E4%B9%89&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E5%8D%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BD%B0%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=彰化&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8B%97%E6%A0%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=苗栗&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%91%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=云林&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E7%AB%B9&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8F%B0%E4%B8%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E6%8A%95&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=南投&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%AE%9C%E5%85%B0&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%A1%83%E5%9B%AD&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B1%8F%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=屏东&rt=2)
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%8E%E6%B9%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=澎湖&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%BD%B0%E5%8C%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E8%8B%97%E6%A0%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016> (referer: http://www.ly.com/travels/travel/searchResult?k=新北&rt=2)
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E4%BA%91%E6%9E%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%8D%97%E6%8A%95&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E5%B1%8F%E4%B8%9C&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%BE%8E%E6%B9%96&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.scraper] DEBUG: Scraped from <200 http://www.ly.com/travels/travel/getSearchYouJiList?k=%E6%96%B0%E5%8C%97&pindex=1&psize=10&rt=1&iid=0.9630197338701016>
+None
+2017-05-03 05:09:28 [scrapy.core.engine] INFO: Closing spider (finished)
+2017-05-03 05:09:28 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 217593,
+ 'downloader/request_count': 370,
+ 'downloader/request_method_count/GET': 370,
+ 'downloader/response_bytes': 3311624,
+ 'downloader/response_count': 370,
+ 'downloader/response_status_count/200': 370,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2017, 5, 2, 21, 9, 28, 498000),
+ 'item_scraped_count': 369,
+ 'log_count/DEBUG': 740,
+ 'log_count/INFO': 7,
+ 'response_received_count': 370,
+ 'scheduler/dequeued': 369,
+ 'scheduler/dequeued/memory': 369,
+ 'scheduler/enqueued': 369,
+ 'scheduler/enqueued/memory': 369,
+ 'start_time': datetime.datetime(2017, 5, 2, 21, 9, 19, 298000)}
+2017-05-03 05:09:28 [scrapy.core.engine] INFO: Spider closed (finished)
